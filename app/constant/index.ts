@@ -3,7 +3,7 @@ export const sidebarItems = [
         id: 1,
         icon: "/assets/icons/home.png",
         label: "Dashboard",
-        href: "/dashboard",
+        href: "/",
     },
     {
         id: 2,
@@ -16,11 +16,5 @@ export const sidebarItems = [
         icon: "/assets/icons/calendar.png",
         label: "Calendar",
         href: "/calendar",
-    },
-    {
-        id: 4,
-        icon: "/assets/icons/setting.png",
-        label: "Settings",
-        href: "/settings",
     },
 ];

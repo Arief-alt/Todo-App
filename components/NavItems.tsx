@@ -23,8 +23,8 @@ const NavItems = ({ handleClick } : {handleClick?: () => void}) => {
                     {sidebarItems.map(({id, icon, label, href}) => (
                         <NavLink key={id} to={href}>
                             {({ isActive }: { isActive: boolean }) => (
-                                <div className={cn("flex rounded-xl items-center gap-3 px-3 py-3", {
-                                    'bg-primary-100 text-white': isActive,
+                                <div className={cn("flex rounded-xl items-center gap-3 px-3 py-3 shadow-emerald-400", {
+                                    'bg-light-green border border-gray-100': isActive,
                                     'hover:bg-gray-100 text-gray-400': !isActive,
                                 })} onClick={handleClick}>
                                     <img

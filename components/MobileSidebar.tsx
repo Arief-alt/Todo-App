@@ -11,7 +11,7 @@ const MobileSidebar = () => {
     }
 
     return (
-    <div className="gap-5 px-6 py-6 border-b lg:hidden">
+    <div className="gap-5 px-6 py-6 border-b border-gray-100 lg:hidden">
         <header className="w-full flex justify-between items-center">
             <h1 className="text-green-600 font-bold text-3xl">
                 TaskFlow

@@ -16,7 +16,7 @@ const Layout = () => {
                 </SidebarComponent>
             </aside>
 
-            <aside className="w-full h-full pt-5 lg:pt-10">
+            <aside className="w-full h-full pt-5 lg:px-10 lg:pt-10">
                 <Outlet />
             </aside>
         </div>

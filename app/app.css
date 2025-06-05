@@ -47,6 +47,20 @@
   display: none !important;
 }
 
+.bg-dark-green {
+  background-color: rgba(84, 197, 98, 0.15)
+}
+.bg-light-green {
+  background-color: rgba(84, 197, 98, 0.3)
+}
+.bg-dark-blue {
+  background-color: rgba(17, 36, 244, 0.25)
+}
+
+.text-light-green {
+  color: rgba(12, 254, 53, 0.4);
+}
+
 html,
 body {
   @apply bg-white dark:bg-black;

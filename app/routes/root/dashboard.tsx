@@ -1,31 +1,35 @@
-import { StatsCard } from 'components'
-import React from 'react'
+import {CreateTask, StatsCard } from 'components'
+import React, { useState } from 'react'
 
 const Dashboard = () => {
-    const total = 10
+    const [showCreateTask, setShowCreateTask] = useState(false);
+    const total = 0
 
     return (
-        <section className="px-5 flex flex-col gap-6">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <main className="px-5 flex flex-col gap-6">
+            <section className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <StatsCard
-                    id={1}
+                    id={2}
                     name="Active Tasks"
                     total={total}
+                    color="text-green-400"
                     icon="/assets/icons/circle.png"
                 />
                 <StatsCard
                     id={2}
                     name="Completed"
                     total={total}
+                    color="text-green-400"
                     icon="/assets/icons/check-circle.png"
                 />
                 <StatsCard
                     id={3}
                     name="Total Tasks"
                     total={total}
+                    color="text-blue-400"
                     icon="/assets/icons/analyse.png"
                 />
-            </div>
+            </section>
 
             <section className="p-6 flex flex-col bg-black border border-gray-100 shadow-400 rounded-xl">
                 <div className="flex-col justify-center grid md:grid-cols-3 gap-6">
@@ -37,6 +41,7 @@ const Dashboard = () => {
                         />
                         <input
                             type="text"
+                            maxLength={50}
                             placeholder="Search tasks..."
                             className="w-full p-2 pl-10 rounded-lg bg-black border border-gray-600 focus:outline-none focus:ring-1 focus:ring-gray-100 cursor-pointer"
                         />
@@ -62,7 +67,7 @@ const Dashboard = () => {
                     <div className="flex items-center justify-center md:justify-end">
                         <button
                             onClick={() => {
-                                console.log("New Task")
+                                setShowCreateTask(true);
                             }}
                             type="submit"
                             className="flex items-center gap-2 px-3 py-2 w-32 rounded-lg bg-dark-blue cursor-pointer border border-gray-600"
@@ -96,7 +101,16 @@ const Dashboard = () => {
                     </span>
                 </div>
             </section>
-        </section>
+
+            {showCreateTask && (
+                <div className="bg-opacity-50 backdrop-blur-sm fixed inset-0 flex items-center justify-center z-50">
+                    <div className="inset-0 bg-black bg-opacity-50" onClick={() => setShowCreateTask(false)}></div>
+                    <div className="relative">
+                        <CreateTask onClose={() => setShowCreateTask(false)} />
+                    </div>
+                </div>
+            )}
+        </main>
     )
 }
 export default Dashboard

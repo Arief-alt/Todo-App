@@ -48,12 +48,6 @@ const Dashboard = () => {
                     </div>
 
                     <div className="relative pt-1">
-                        <img
-                            src="/assets/icons/arrow-down.png"
-                            alt="search"
-                            className="absolute ml-48 md:ml-38 pt-3 size-8"
-                        />
-
                         <select
                             className="w-full md:w-48 p-2 rounded-lg bg-black border border-gray-600 appearance-none focus:outline-none focus:ring-1 focus:ring-gray-100 cursor-pointer"
                         >

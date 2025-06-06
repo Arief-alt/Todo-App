@@ -67,6 +67,10 @@
   color: rgba(12, 254, 53, 0.4);
 }
 
+.auth {
+  @apply w-full h-screen flex bg-cover bg-no-repeat;
+}
+
 html,
 body {
   @apply bg-white dark:bg-black;

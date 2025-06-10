@@ -18,7 +18,7 @@ const Welcome = () => {
                     Your minimalist to-do app to organize tasks, focus, and get things done.
                 </p>
 
-                <div className="pt-5 flex items-center justify-center">
+                <div className="hover:scale-105 pt-5 flex items-center justify-center">
                     <button
                         onClick={() => {
                             navigate('/dashboard')

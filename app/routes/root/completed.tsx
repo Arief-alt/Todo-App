@@ -44,7 +44,7 @@ const Completed = () => {
                 </div>
             </section>
 
-            <section className="p-12 flex flex-col items-center justify-center bg-black border border-gray-100 shadow-400 rounded-xl">
+            <section className="hover:scale-105 p-12 flex flex-col items-center justify-center bg-black border border-gray-100 shadow-400 rounded-xl">
                 <div className="gap-2 flex flex-col justify-center items-center">
                     <img
                         src="/assets/icons/check-circle.png"

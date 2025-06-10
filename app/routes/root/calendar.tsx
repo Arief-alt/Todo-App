@@ -42,7 +42,7 @@ const Calendar = () => {
 
             <section className="flex flex-col">
                 <div className="gap-6 grid xl:grid-cols-3">
-                    <section className="px-4 py-4 gap-2 flex-col bg-black border border-gray-100 shadow-400 rounded-xl">
+                    <section className="hover:scale-105 px-4 py-4 gap-2 flex-col bg-black border border-gray-100 shadow-400 rounded-xl">
                         <section className="flex items-center justify-between">
                             <div className="flex">
                                 <img
@@ -65,7 +65,7 @@ const Calendar = () => {
                             No overdue tasks! Great job staying on track.
                         </h1>
                     </section>
-                    <section className="px-4 py-4 gap-2 flex-col bg-black border border-gray-100 shadow-400 rounded-xl">
+                    <section className="hover:scale-105 px-4 py-4 gap-2 flex-col bg-black border border-gray-100 shadow-400 rounded-xl">
                         <section className="flex items-center justify-between">
                             <div className="flex">
                                 <img
@@ -88,7 +88,7 @@ const Calendar = () => {
                             No tasks due today. Enjoy your day!
                         </h1>
                     </section>
-                    <section className="px-4 py-4 gap-2 flex-col bg-black border border-gray-100 shadow-400 rounded-xl">
+                    <section className="hover:scale-105 px-4 py-4 gap-2 flex-col bg-black border border-gray-100 shadow-400 rounded-xl">
                         <section className="flex items-center justify-between">
                             <div className="flex">
                                 <img

@@ -13,7 +13,7 @@ const StatsCard = ({id, name, total, icon, color}: StatsCard) => {
     };
 
     return (
-        <article className={`p-6 flex flex-col gap-6 ${getBackgroundColor()} shadow-400 rounded-xl text-dark-100`}>
+        <article className={`p-6 hover:scale-105 flex flex-col gap-6 ${getBackgroundColor()} shadow-400 rounded-xl text-dark-100`}>
             <div className="flex flex-row xl:flex-row xl:items-center justify-between">
                 <h1 className="text-gray-400">
                     {name}

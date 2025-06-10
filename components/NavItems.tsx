@@ -24,8 +24,8 @@ const NavItems = ({ handleClick } : {handleClick?: () => void}) => {
                         <NavLink key={id} to={href}>
                             {({ isActive }: { isActive: boolean }) => (
                                 <div className={cn("flex rounded-xl items-center gap-3 px-3 py-3 shadow-emerald-400", {
-                                    'bg-light-green border border-green-400': isActive,
-                                    'hover:bg-gray-100 text-gray-400': !isActive,
+                                    'hover:scale-105 bg-light-green border border-green-400': isActive,
+                                    'hover:scale-105 hover:bg-gray-100 text-gray-400': !isActive,
                                 })} onClick={handleClick}>
                                     <img
                                         src={icon}

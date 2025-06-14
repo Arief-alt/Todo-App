@@ -5,12 +5,12 @@ const CreateTask = ({onClose}: CreateTaskProps) => {
     return (
         <article className="w-102 justify-center items-center">
             <div className="gap-6 px-6 py-6 flex flex-col bg-black border border-gray-100 shadow-400 rounded-xl">
-                <h1 className="font-semibold text-2xl">
+                <h1 className="text-white font-semibold text-2xl">
                     Create New Task
                 </h1>
 
                 <section className="flex flex-col gap-2">
-                    <h1 className="font-semibold font-sm">
+                    <h1 className="text-white font-semibold font-sm">
                         Task Title
                     </h1>
 
@@ -18,19 +18,19 @@ const CreateTask = ({onClose}: CreateTaskProps) => {
                         type="text"
                         maxLength={50}
                         placeholder="Enter task title..."
-                        className="w-full p-2 rounded-lg bg-black border border-gray-600 focus:outline-none focus:ring-1 focus:ring-gray-100 cursor-pointer"
+                        className="text-white w-full p-2 rounded-lg bg-black border border-gray-600 focus:outline-none focus:ring-1 focus:ring-gray-100 cursor-pointer"
                     />
                 </section>
 
                 <section className="flex flex-col gap-2">
-                    <h1 className="font-semibold font-sm">
+                    <h1 className="text-white font-semibold font-sm">
                         Description
                     </h1>
 
                     <textarea
                         placeholder="Add task description..."
                         maxLength={200}
-                        className="w-full p-2 rounded-lg bg-black border border-gray-600 focus:outline-none focus:ring-1 focus:ring-gray-100 cursor-pointer resize-none"
+                        className="text-white w-full p-2 rounded-lg bg-black border border-gray-600 focus:outline-none focus:ring-1 focus:ring-gray-100 cursor-pointer resize-none"
                         rows={1}
                         style={{ minHeight: '44px' }}
                         onInput={(e) => {
@@ -43,12 +43,12 @@ const CreateTask = ({onClose}: CreateTaskProps) => {
 
                 <div className="gap-6 grid grid-cols-2">
                     <section>
-                        <h1 className="font-semibold font-sm">
+                        <h1 className="text-white font-semibold font-sm">
                             Priority
                         </h1>
 
                         <select
-                            className="w-full p-2 rounded-lg bg-black border border-gray-600 appearance-none focus:outline-none focus:ring-1 focus:ring-gray-100 cursor-pointer"
+                            className="text-white w-full p-2 rounded-lg bg-black border border-gray-600 appearance-none focus:outline-none focus:ring-1 focus:ring-gray-100 cursor-pointer"
                         >
                             <option value="High Priority">High Priority</option>
                             <option value="Medium Priority">Medium Priority</option>
@@ -56,7 +56,7 @@ const CreateTask = ({onClose}: CreateTaskProps) => {
                         </select>
                     </section>
                     <section>
-                        <h1 className="font-semibold font-sm">
+                        <h1 className="text-white font-semibold font-sm">
                             Due Date
                         </h1>
 
@@ -64,7 +64,7 @@ const CreateTask = ({onClose}: CreateTaskProps) => {
                             type="text"
                             maxLength={10}
                             placeholder="dd/mm/yyyy"
-                            className="w-full p-2 rounded-lg bg-black border border-gray-600 focus:outline-none focus:ring-1 focus:ring-gray-100 cursor-pointer"
+                            className="text-white w-full p-2 rounded-lg bg-black border border-gray-600 focus:outline-none focus:ring-1 focus:ring-gray-100 cursor-pointer"
                         />
                     </section>
                 </div>
@@ -76,7 +76,7 @@ const CreateTask = ({onClose}: CreateTaskProps) => {
                             type="submit"
                             className="flex items-center justify-center gap-2 px-3 py-2 w-32 rounded-lg bg-black cursor-pointer border border-gray-600"
                         >
-                            <h1>Cancel</h1>
+                            <h1 className="text-white">Cancel</h1>
                         </button>
                     </section>
                     <section>
@@ -89,7 +89,7 @@ const CreateTask = ({onClose}: CreateTaskProps) => {
                             type="submit"
                             className="flex items-center justify-center gap-2 px-3 py-2 w-32 rounded-lg bg-dark-blue cursor-pointer border border-gray-600"
                         >
-                            <h1>Create Task</h1>
+                            <h1 className="text-white">Create Task</h1>
                         </button>
                     </section>
                 </div>

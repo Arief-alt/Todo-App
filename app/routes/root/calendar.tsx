@@ -7,7 +7,7 @@ const Calendar = () => {
     return (
         <main className="px-5 flex flex-col gap-6">
             <div className="flex flex-col gap-2">
-                <h1 className="font-bold text-4xl">
+                <h1 className="text-white font-bold text-4xl">
                     Calendar View
                 </h1>
 
@@ -56,7 +56,7 @@ const Calendar = () => {
                                 </h1>
                             </div>
 
-                            <div className="px-2 bg-black border border-gray-100 shadow-400 rounded-lg">
+                            <div className="text-white px-2 bg-black border border-gray-100 shadow-400 rounded-lg">
                                 <h1>0</h1>
                             </div>
                         </section>
@@ -79,7 +79,7 @@ const Calendar = () => {
                                 </h1>
                             </div>
 
-                            <div className="px-2 bg-black border border-gray-100 shadow-400 rounded-lg">
+                            <div className="text-white px-2 bg-black border border-gray-100 shadow-400 rounded-lg">
                                 <h1>0</h1>
                             </div>
                         </section>
@@ -102,7 +102,7 @@ const Calendar = () => {
                                 </h1>
                             </div>
 
-                            <div className="px-2 bg-black border border-gray-100 shadow-400 rounded-lg">
+                            <div className="text-white px-2 bg-black border border-gray-100 shadow-400 rounded-lg">
                                 <h1>0</h1>
                             </div>
                         </section>

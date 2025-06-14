@@ -43,13 +43,13 @@ const Dashboard = () => {
                             type="text"
                             maxLength={50}
                             placeholder="Search tasks..."
-                            className="w-full p-2 pl-10 rounded-lg bg-black border border-gray-600 focus:outline-none focus:ring-1 focus:ring-gray-100 cursor-pointer"
+                            className="text-white w-full p-2 pl-10 rounded-lg bg-black border border-gray-600 focus:outline-none focus:ring-1 focus:ring-gray-100 cursor-pointer"
                         />
                     </div>
 
                     <div className="relative pt-1">
                         <select
-                            className="w-full md:w-48 p-2 rounded-lg bg-black border border-gray-600 appearance-none focus:outline-none focus:ring-1 focus:ring-gray-100 cursor-pointer"
+                            className="text-white w-full md:w-48 p-2 rounded-lg bg-black border border-gray-600 appearance-none focus:outline-none focus:ring-1 focus:ring-gray-100 cursor-pointer"
                         >
                             <option value="All Priorities">All Priorities</option>
                             <option value="High Priority">High Priority</option>
@@ -58,7 +58,7 @@ const Dashboard = () => {
                         </select>
                     </div>
 
-                    <div className="flex items-center justify-center md:justify-end">
+                    <div className="hover:scale-105 flex items-center justify-center md:justify-end">
                         <button
                             onClick={() => {
                                 setShowCreateTask(true);
@@ -72,7 +72,7 @@ const Dashboard = () => {
                                 className="size-5"
                             />
 
-                            <h1>New Task</h1>
+                            <h1 className="text-white">New Task</h1>
                         </button>
                     </div>
                 </div>

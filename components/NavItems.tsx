@@ -32,7 +32,7 @@ const NavItems = ({ handleClick } : {handleClick?: () => void}) => {
                                         alt={label}
                                         className="size-6"
                                     />
-                                    <div className="text-sm">
+                                    <div className="text-gray-400 text-sm">
                                         {label}
                                     </div>
                                 </div>

@@ -13,7 +13,7 @@ const Welcome = () => {
         >
             <section className="px-10 py-5 border border-gray-100 shadow-400 rounded-xl flex-center">
                 <h1 className="text-center font-bold text-3xl text-white">
-                    Welcome to TaskFlow
+                    Welcom to TaskFlow
                 </h1>
 
                 <p className="text-center font-bold text-lg text-gray-300 mt-2">

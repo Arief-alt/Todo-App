@@ -13,11 +13,11 @@ const Welcome = () => {
         >
             <section className="px-10 py-5 border border-gray-100 shadow-400 rounded-xl flex-center">
                 <h1 className="text-center font-bold text-3xl text-white">
-                    Welcom to TaskFlow
+                    Welcome to TaskFlow
                 </h1>
 
                 <p className="text-center font-bold text-lg text-gray-300 mt-2">
-                    Your minimalist to-do app to organize tasks, focus, and get things done.
+                    You minimalist to-do app to organize tasks, focus, and get things done.
                 </p>
 
                 <div className="hover:scale-105 pt-5 flex items-center justify-center">

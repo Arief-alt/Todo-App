@@ -17,7 +17,7 @@ const Welcome = () => {
                 </h1>
 
                 <p className="text-center font-bold text-lg text-gray-300 mt-2">
-                    You minimalist to-do app to organize tasks, focus, and get things done.
+                    Your minimalist to-do app to organize tasks, focus, and get things done.
                 </p>
 
                 <div className="hover:scale-105 pt-5 flex items-center justify-center">
